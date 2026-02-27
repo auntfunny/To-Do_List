@@ -129,7 +129,6 @@ function createListItem() {
     " ",
   );
   newListItem.classList.add(...listClasses);
-  newListItem.id = dynamicData.length;
   return newListItem;
 }
 function createSpan() {
@@ -242,7 +241,6 @@ function editTask(event) {
           <label for="change" class="text-sm text-acc5">Change</label>
           <input type="radio" name="change" id="change" class="accent-acc5 scale-125">
   `;
-
   currentListItem.children[0].children[1].remove();
   currentListItem.children[0].appendChild(editBox);
   currentListItem.children[0].insertAdjacentElement(
