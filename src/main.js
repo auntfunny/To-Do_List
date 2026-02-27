@@ -51,7 +51,6 @@ function manageClick(event) {
   } else if (currentItem.type === "checkbox") {
     finishTask(event.target);
   }
-  console.log(activeToggle);
 }
 
 function manageKey(event) {
